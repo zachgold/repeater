@@ -9,7 +9,7 @@ textColor(255),
 fillColor(128);
 
 const int textPadding = 4;
-const int defaultWidth = 200;
+const int defaultWidth = 80;
 const int defaultHeight = 16;
 
 class ofBaseGui{

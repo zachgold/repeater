@@ -3,8 +3,8 @@
 #include "ofMain.h"
 #include "ofxiPhone.h"
 #include "ofxiPhoneExtras.h"
-#import  "ofMoviePlayer.h"
-
+#include "ofMoviePlayer.h"
+#include "functionGraph.h"
 
 class testApp : public ofxiPhoneApp {
 	
@@ -26,7 +26,18 @@ public:
 	void gotMemoryWarning();
 	void deviceOrientationChanged(int newOrientation);
 	
-	ofMoviePlayer myMoviePlayer;	
+	ofMoviePlayer myMoviePlayer;
+    
+    void pinch(CGFloat scale, CGPoint location);
+	void rotate(CGFloat rotation, CGPoint location);
+    void addButton(string name);
+	BOOL isPinching;
+	BOOL isRotating;
+	float previousAngle;
+	CGPoint tangentLocation;
+	functionGraph* myFunction;
+    int playhead;
+    int clipPlaying;
 };
 
 

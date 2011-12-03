@@ -6,32 +6,33 @@ class ofToggle : public ofBaseGui{
 	friend class ofPanel;
 	
 public:
-	ofToggle* setup(string toggleName, bool _bVal, float width = defaultWidth, float height = defaultHeight){
+	ofToggle* setup(string toggleName, bool _bVal, int yOffset, float width = defaultWidth, float height = defaultHeight){
 		name = toggleName;
 		b.x = 0;
-		b.y = 0;
+		b.y = height * yOffset;
 		b.width = width;
 		b.height = height;
 		currentFrame = 0;			
 		bGuiActive = false;
 		bVal = _bVal;
 		checkboxRect.set(1, 1, b.height - 2, b.height - 2);
-		return this;
+        return this;
 	}
 	
 	virtual void mouseMoved(ofMouseEventArgs & args){
 	}
 	
 	virtual void mousePressed(ofMouseEventArgs & args){
-		setValue(args.x, args.y, true);
+		//setValue(args.x, args.y, true);
 	}
 	
 	virtual void mouseDragged(ofMouseEventArgs & args){
 	}
 	
 	virtual void mouseReleased(ofMouseEventArgs & args){
-		bGuiActive = false;		
-	}	
+		//bGuiActive = false;		
+	}
+
 	
 	virtual void saveToXml(ofxXmlSettings& xml) {
 		cout << "warning we need to check for spaces in a name" << endl;	
@@ -45,6 +46,10 @@ public:
 	
 	bool getValue(){
 		return bVal;
+	}
+    
+    void setVal(bool val){
+		bVal = val;
 	}
 	
 	void draw(){
@@ -74,28 +79,27 @@ public:
 		ofSetColor(textColor);		
 		ofTranslate(0, b.height / 2 + 4);
 		ofDrawBitmapString(name, textPadding + checkboxRect.width, 0);
+        /*
 		string valStr = bVal ? "true" : "false";		
 		ofDrawBitmapString(valStr, b.width - textPadding - valStr.length() * 8, 0);
+        */
 		
 		ofPopMatrix();
 		ofPopStyle();
 	}
-	
-protected:
-	ofRectangle checkboxRect;
-	bool bVal;
-	
-	void setValue(float mx, float my, bool bCheck){
-	
+    
+    void setValue(float mx, float my, bool bCheck){
 		if( ofGetFrameNum() - currentFrame > 1 ){
 			bGuiActive = false;
 			return; 
 		}
+        
+        
 		if( bCheck ){
 			ofRectangle checkRect = checkboxRect;
 			checkRect.x += b.x;
 			checkRect.y += b.y;
-		
+            
 			if( checkRect.inside(mx, my) ){
 				bGuiActive = true;
 			}else{
@@ -104,8 +108,14 @@ protected:
 			}
 		}
 		if( bGuiActive ){
-			bVal = !bVal;
+            if(bVal == false){
+                bVal = true;
+            }
 		}
 	}
+	
+protected:
+	ofRectangle checkboxRect;
+	bool bVal;
 	
 };

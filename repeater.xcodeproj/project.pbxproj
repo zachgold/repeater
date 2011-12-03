@@ -12,13 +12,19 @@
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		34199D47147706EA003065DE /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 34199D45147706EA003065DE /* default.png */; };
 		34199D48147706EA003065DE /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 34199D46147706EA003065DE /* icon.png */; };
+		3438937914897910002C9C9D /* ofRadioToggle.h in Resources */ = {isa = PBXBuildFile; fileRef = 3438937814897910002C9C9D /* ofRadioToggle.h */; };
 		3462DFBB1470777800F2A08E /* install.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3462DFB21470777800F2A08E /* install.xml */; };
 		3462DFBC1470777800F2A08E /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3462DFB41470777800F2A08E /* tinyxml.cpp */; };
 		3462DFBD1470777800F2A08E /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3462DFB61470777800F2A08E /* tinyxmlerror.cpp */; };
 		3462DFBE1470777800F2A08E /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3462DFB71470777800F2A08E /* tinyxmlparser.cpp */; };
 		3462DFBF1470777800F2A08E /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3462DFB91470777800F2A08E /* ofxXmlSettings.cpp */; };
-		34C23499143A58080057F39F /* Movie.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 34C23498143A58080057F39F /* Movie.m4v */; };
+		34917F7114819E970043FCE1 /* blinker.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 34917F6D14819E970043FCE1 /* blinker.m4v */; };
+		34917F7214819E970043FCE1 /* bubbles.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 34917F6E14819E970043FCE1 /* bubbles.m4v */; };
+		34917F7314819E970043FCE1 /* elevator.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 34917F6F14819E970043FCE1 /* elevator.m4v */; };
+		34917F761481A0780043FCE1 /* whip.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 34917F751481A0780043FCE1 /* whip.m4v */; };
 		34C2349D143A58250057F39F /* ofMoviePlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 34C2349C143A58250057F39F /* ofMoviePlayer.mm */; };
+		34EBAB081479929200FD6999 /* functionGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34EBAB051479929200FD6999 /* functionGraph.cpp */; };
+		34EBAB091479929200FD6999 /* gestures.mm in Sources */ = {isa = PBXBuildFile; fileRef = 34EBAB071479929200FD6999 /* gestures.mm */; };
 		5326AEA810A23A0500278DE6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5326AEA710A23A0500278DE6 /* CoreLocation.framework */; };
 		53F323EB10A20EDB00E0DAE4 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F323EA10A20EDB00E0DAE4 /* OpenAL.framework */; };
 		BB16EBD20F2B2A9500518274 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB16EBD10F2B2A9500518274 /* OpenGLES.framework */; };
@@ -61,6 +67,7 @@
 		32CA4F630368D1EE00C91783 /* iPhone_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone_Prefix.pch; sourceTree = "<group>"; };
 		34199D45147706EA003065DE /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
 		34199D46147706EA003065DE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		3438937814897910002C9C9D /* ofRadioToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofRadioToggle.h; sourceTree = "<group>"; };
 		3462DFAC1470770300F2A08E /* ofBaseGui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofBaseGui.h; sourceTree = "<group>"; };
 		3462DFAD1470770300F2A08E /* ofGui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofGui.h; sourceTree = "<group>"; };
 		3462DFAE1470770300F2A08E /* ofPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofPanel.h; sourceTree = "<group>"; };
@@ -73,9 +80,15 @@
 		3462DFB71470777800F2A08E /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
 		3462DFB91470777800F2A08E /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxXmlSettings.cpp; sourceTree = "<group>"; };
 		3462DFBA1470777800F2A08E /* ofxXmlSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxXmlSettings.h; sourceTree = "<group>"; };
-		34C23498143A58080057F39F /* Movie.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Movie.m4v; sourceTree = "<group>"; };
+		34917F6D14819E970043FCE1 /* blinker.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = blinker.m4v; sourceTree = "<group>"; };
+		34917F6E14819E970043FCE1 /* bubbles.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = bubbles.m4v; sourceTree = "<group>"; };
+		34917F6F14819E970043FCE1 /* elevator.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = elevator.m4v; sourceTree = "<group>"; };
+		34917F751481A0780043FCE1 /* whip.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = whip.m4v; sourceTree = "<group>"; };
 		34C2349B143A58250057F39F /* ofMoviePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofMoviePlayer.h; sourceTree = "<group>"; };
 		34C2349C143A58250057F39F /* ofMoviePlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofMoviePlayer.mm; sourceTree = "<group>"; };
+		34EBAB051479929200FD6999 /* functionGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = functionGraph.cpp; sourceTree = "<group>"; };
+		34EBAB061479929200FD6999 /* functionGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = functionGraph.h; sourceTree = "<group>"; };
+		34EBAB071479929200FD6999 /* gestures.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = gestures.mm; sourceTree = "<group>"; };
 		5326AEA710A23A0500278DE6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		53F323EA10A20EDB00E0DAE4 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		BB16EBD10F2B2A9500518274 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -168,6 +181,7 @@
 				3462DFAE1470770300F2A08E /* ofPanel.h */,
 				3462DFAF1470770300F2A08E /* ofSlider.h */,
 				3462DFB01470770300F2A08E /* ofToggle.h */,
+				3438937814897910002C9C9D /* ofRadioToggle.h */,
 			);
 			path = ofGui;
 			sourceTree = "<group>";
@@ -233,9 +247,12 @@
 		BB24DD8B10DA77E000E9C588 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				34917F751481A0780043FCE1 /* whip.m4v */,
+				34917F6D14819E970043FCE1 /* blinker.m4v */,
+				34917F6E14819E970043FCE1 /* bubbles.m4v */,
+				34917F6F14819E970043FCE1 /* elevator.m4v */,
 				34199D45147706EA003065DE /* default.png */,
 				34199D46147706EA003065DE /* icon.png */,
-				34C23498143A58080057F39F /* Movie.m4v */,
 			);
 			name = data;
 			path = bin/data;
@@ -273,6 +290,9 @@
 			isa = PBXGroup;
 			children = (
 				3462DFAB1470770300F2A08E /* ofGui */,
+				34EBAB051479929200FD6999 /* functionGraph.cpp */,
+				34EBAB061479929200FD6999 /* functionGraph.h */,
+				34EBAB071479929200FD6999 /* gestures.mm */,
 				E4D8936B11527B74007E1F53 /* main.mm */,
 				E4D8936D11527B74007E1F53 /* testApp.mm */,
 				E4D8936C11527B74007E1F53 /* testApp.h */,
@@ -353,10 +373,14 @@
 				BB24DDCA10DA781C00E9C588 /* ofxiphone-Info.plist in Resources */,
 				E41D3ED713B38FB500A75A5D /* Project.xcconfig in Resources */,
 				E41D3EE613B3906D00A75A5D /* CoreOF.xcconfig in Resources */,
-				34C23499143A58080057F39F /* Movie.m4v in Resources */,
 				3462DFBB1470777800F2A08E /* install.xml in Resources */,
 				34199D47147706EA003065DE /* default.png in Resources */,
 				34199D48147706EA003065DE /* icon.png in Resources */,
+				34917F7114819E970043FCE1 /* blinker.m4v in Resources */,
+				34917F7214819E970043FCE1 /* bubbles.m4v in Resources */,
+				34917F7314819E970043FCE1 /* elevator.m4v in Resources */,
+				34917F761481A0780043FCE1 /* whip.m4v in Resources */,
+				3438937914897910002C9C9D /* ofRadioToggle.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +414,8 @@
 				3462DFBD1470777800F2A08E /* tinyxmlerror.cpp in Sources */,
 				3462DFBE1470777800F2A08E /* tinyxmlparser.cpp in Sources */,
 				3462DFBF1470777800F2A08E /* ofxXmlSettings.cpp in Sources */,
+				34EBAB081479929200FD6999 /* functionGraph.cpp in Sources */,
+				34EBAB091479929200FD6999 /* gestures.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

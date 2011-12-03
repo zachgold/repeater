@@ -113,7 +113,7 @@ public:
 	virtual void mouseMoved(ofMouseEventArgs & args){
 		ofMouseEventArgs a = args;
 		a.x -= b.x;
-		a.y -= b.y;		
+		a.y -= b.y;
 		for(int i = 0; i < collection.size(); i++){
 			collection[i]->mouseMoved(a);
 		}		
@@ -132,11 +132,11 @@ public:
 	}
 	
 	virtual void mouseDragged(ofMouseEventArgs & args){
-		setValue(args.x, args.y, false);	
+		//setValue(args.x, args.y, false);	
 		if( bGuiActive ){
 			ofMouseEventArgs a = args;
 			a.x -= b.x;
-			a.y -= b.y;			
+			a.y -= b.y;
 			for(int i = 0; i < collection.size(); i++){
 				collection[i]->mouseDragged(a);
 			}
@@ -148,7 +148,7 @@ public:
 		for(int k = 0; k < collection.size(); k++){
 			ofMouseEventArgs a = args;
 			a.x -= b.x;
-			a.y -= b.y;			
+			a.y -= b.y;
 			collection[k]->mouseReleased(a);
 		}
 	}	
@@ -196,7 +196,8 @@ public:
 		currentFrame = ofGetFrameNum();
 		
 		ofTranslate(b.x, b.y);
-		
+        
+		/*
 		ofFill();
 		ofSetColor(headerBackgroundColor);
 		ofRect(0, 0, b.width, header);			
@@ -208,6 +209,7 @@ public:
 		loadIcon.draw(loadBox.x, loadBox.y);
 		saveIcon.draw(saveBox.x, saveBox.y);
 		ofPopMatrix();
+        */
 		
 		for(int i = 0; i < collection.size(); i++){
 			collection[i]->draw();
@@ -248,6 +250,7 @@ protected:
 			b.x = mx - grabPt.x;
 			b.y = my - grabPt.y;
 		}
+
 	}		
 	
 	ofPoint grabPt;
